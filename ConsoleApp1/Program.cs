@@ -9,13 +9,24 @@ namespace ConsoleApp1
     class Program
     {
 
-     
 
+      
         static void Main(string[] args )
         {
 
+            args = new string[3];
+
+            args[0] = "3";
+            args[1] = "7";
+            args[2] = "+";
+
+
+
+
             double a=0, b=0, res = 0;
             string oper= string.Empty;
+          
+
             foreach (var item in args)
             {
                 Console.WriteLine(item);
@@ -49,6 +60,9 @@ namespace ConsoleApp1
 
             Console.WriteLine($"{a}{oper}{b}={res}");
 
+          
+
+            
 
             Console.ReadKey();
 
